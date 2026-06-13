@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #080A10; color: #E0DDD6; }
+
+@layer components {
+  .input-style {
+    @apply w-full rounded-[9px] px-3 py-2.5 text-[13px] text-[#E0DDD6] outline-none transition-colors duration-200;
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+  }
+  .input-style:focus { border-color: rgba(255,255,255,0.22); }
+  .input-style[type="date"]::-webkit-calendar-picker-indicator { filter: invert(0.35); }
+  .input-style option { background: #12151F; }
+
+  .input-label {
+    @apply text-[9px] tracking-widest uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    color: #2E2E3E;
+  }
+
+  .btn-primary {
+    @apply py-3 rounded-[11px] text-[17px] font-extrabold tracking-[3px] uppercase text-[#080A10] cursor-pointer transition-all duration-200 border-none;
+    font-family: 'Barlow Condensed', sans-serif;
+    background: linear-gradient(135deg, #E8A838, #FF6B35);
+  }
+  .btn-primary:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(232,168,56,0.26); }
+
+  .btn-secondary {
+    @apply py-3 rounded-[11px] text-[14px] font-bold tracking-[2px] uppercase cursor-pointer transition-colors duration-200;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #555;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.09);
+  }
+
+  .btn-bleu  { background: rgba(100,180,255,.09); border: 1px solid rgba(100,180,255,.20); color: #64B4FF; }
+  .btn-bleu:hover { background: rgba(100,180,255,.15); }
+  .btn-orange { background: rgba(255,179,71,.09); border: 1px solid rgba(255,179,71,.20); color: #FFB347; }
+  .btn-vert  { background: rgba(77,255,155,.09); border: 1px solid rgba(77,255,155,.20); color: #4DFF9B; }
+  .btn-rouge { background: rgba(255,77,77,.09); border: 1px solid rgba(255,77,77,.20); color: #FF4D4D; }
+
+  .badge-rouge { @apply px-2.5 py-0.5 rounded-full text-[9px] tracking-wider; font-family: 'JetBrains Mono', monospace; background: rgba(255,77,77,.10); color: #FF4D4D; border: 1px solid rgba(255,77,77,.22); }
+  .badge-orange { @apply px-2.5 py-0.5 rounded-full text-[9px] tracking-wider; font-family: 'JetBrains Mono', monospace; background: rgba(255,179,71,.10); color: #FFB347; border: 1px solid rgba(255,179,71,.22); }
+  .badge-vert { @apply px-2.5 py-0.5 rounded-full text-[9px] tracking-wider; font-family: 'JetBrains Mono', monospace; background: rgba(77,255,155,.07); color: #4DFF9B; border: 1px solid rgba(77,255,155,.16); }
+  .badge-bleu { @apply px-2.5 py-0.5 rounded-full text-[9px] tracking-wider; font-family: 'JetBrains Mono', monospace; background: rgba(100,180,255,.10); color: #64B4FF; border: 1px solid rgba(100,180,255,.20); }
+}
+
+@keyframes slideDown { from { top: -10px; opacity: 0; } to { top: 20px; opacity: 1; } }
+@keyframes slideUp   { from { transform: translateY(100%); } to { transform: translateY(0); } }
+@keyframes fadeIn    { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }

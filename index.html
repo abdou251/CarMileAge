@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+  index.html — Page HTML de base
+  Vite injecte automatiquement le JS compilé dans cette page.
+  La div#root est le point de montage de l'application React
+  (voir src/main.jsx).
+-->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Icône dans l'onglet du navigateur -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>" />
+
+    <!-- Viewport mobile : empêche le zoom auto sur les inputs iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Couleur de la barre d'état mobile (Android Chrome) -->
+    <meta name="theme-color" content="#080A10" />
+
+    <!-- Pour installer en PWA sur mobile (optionnel) -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <title>FamVoiture 🚗</title>
+  </head>
+  <body>
+    <!-- React monte l'application ici -->
+    <div id="root"></div>
+
+    <!-- Point d'entrée Vite (transformé automatiquement au build) -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

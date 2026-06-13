@@ -1,0 +1,17 @@
+# Dépendances (générées par npm install, ne pas versionner)
+node_modules/
+
+# Fichiers de build (générés par npm run build)
+dist/
+
+# Fichiers de cache Vite
+.vite/
+
+# Variables d'environnement (si vous ajoutez un .env plus tard)
+.env
+.env.local
+.env.*.local
+
+# Fichiers système
+.DS_Store
+Thumbs.db
