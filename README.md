@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚗 FamVoiture
 
 Application familiale de suivi d'entretien automobile.
@@ -144,3 +145,6 @@ famvoiture/
 | Tailwind CSS | 3 | Styles utilitaires |
 | Supabase | 2 | Auth + DB + Realtime |
 | EmailJS | 4 | Notifications email |
+=======
+# CarMileAge
+>>>>>>> f73b8f5a2ae19454a86dc9d04c58fa2084332157
