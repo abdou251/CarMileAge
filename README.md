@@ -1,8 +1,9 @@
-<<<<<<< HEAD
-# 🚗 FamVoiture
+# 🚗 CarMileAge
 
 Application familiale de suivi d'entretien automobile.
 **React 18 + Vite + Tailwind CSS v3 + Supabase**
+
+🔗 Démo : [car-mile-age.vercel.app](https://car-mile-age.vercel.app)
 
 ---
 
@@ -10,7 +11,7 @@ Application familiale de suivi d'entretien automobile.
 
 ```bash
 # 1. Aller dans le dossier
-cd famvoiture
+cd CarMileAge
 
 # 2. Installer les dépendances
 npm install
@@ -68,7 +69,7 @@ VITE_SUPABASE_ANON_KEY=eyJhbGci...
 ## 📁 Structure du projet
 
 ```
-famvoiture/
+CarMileAge/
 ├── schema.sql                      ← À exécuter dans Supabase SQL Editor
 ├── .env.example                    ← Modèle pour les variables d'env
 ├── package.json
@@ -134,6 +135,9 @@ famvoiture/
 3. Créer un template avec : `{{to_email}}` `{{subject}}` `{{message}}`
 4. Saisir les identifiants dans l'onglet **✉ Email** de l'app
 
+> La librairie EmailJS est chargée à la volée depuis un CDN (`@emailjs/browser@4`),
+> rien à installer.
+
 ---
 
 ## 🛠️ Technologies
@@ -141,10 +145,7 @@ famvoiture/
 | Outil | Version | Rôle |
 |---|---|---|
 | React | 18 | Interface utilisateur |
-| Vite | 5 | Bundler + dev server |
+| Vite | 8 | Bundler + dev server |
 | Tailwind CSS | 3 | Styles utilitaires |
 | Supabase | 2 | Auth + DB + Realtime |
 | EmailJS | 4 | Notifications email |
-=======
-# CarMileAge
->>>>>>> f73b8f5a2ae19454a86dc9d04c58fa2084332157
