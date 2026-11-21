@@ -12,6 +12,10 @@ dist/
 .env.local
 .env.*.local
 
+# Fichiers générés par Cloudflare Wrangler
+.wrangler
+.dev.vars*
+
 # Fichiers système
 .DS_Store
 Thumbs.db
