@@ -328,15 +328,15 @@ async function _checkAndNotify(manual, cfg, pieces, rempl, kmActuel, notifSentRe
         + (s.moisRestant  !== null ? ` | Temps: ${s.moisRestant > 0 ? s.moisRestant + " mois restants" : "DÉPASSÉ"}` : "");
     };
     const corps =
-      `🚗 RAPPORT D'ENTRETIEN — FAMVOITURE\n${"━".repeat(38)}\n`
+      `🚗 RAPPORT D'ENTRETIEN — CARMILEAGE\n${"━".repeat(38)}\n`
       + `📅 Date : ${fmtDate(today())} | 📍 Km : ${kmActuel.toLocaleString("fr-FR")} km\n\n`
       + (urgentes.length   ? `🔴 URGENT :\n${urgentes.map(ligne).join("\n")}\n\n`   : "")
       + (prochaines.length ? `🟡 BIENTÔT :\n${prochaines.map(ligne).join("\n")}\n\n` : "")
-      + `${"━".repeat(38)}\nConnectez-vous à FamVoiture pour marquer les remplacements.`;
+      + `${"━".repeat(38)}\nConnectez-vous à CarMileAge pour marquer les remplacements.`;
 
     await ejs.send(cfg.serviceId, cfg.templateId, {
       to_email: cfg.emailTo,
-      subject:  `🚗 FamVoiture — ${urgentes.length} urgent(s), ${prochaines.length} bientôt`,
+      subject:  `🚗 CarMileAge — ${urgentes.length} urgent(s), ${prochaines.length} bientôt`,
       message:  corps, km_actuel: kmActuel.toLocaleString("fr-FR") + " km",
     });
 

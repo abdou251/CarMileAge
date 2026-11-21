@@ -24,7 +24,7 @@ export default function Header({ kmActuel, nbPieces, nbUrgent, nbBientot, emailC
       <div>
         <div className="text-[22px] font-extrabold tracking-[3px] uppercase text-[#E0DDD6]"
              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-          🚗 FamVoiture
+          🚗 CarMileAge
         </div>
         <div className="text-[10px] text-[#3A3A4A] mt-0.5 tracking-wider"
              style={{ fontFamily: "'JetBrains Mono', monospace" }}>

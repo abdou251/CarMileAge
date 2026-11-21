@@ -88,7 +88,7 @@ export default function PageAuth() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">🚗</div>
           <h1 className="text-[28px] font-extrabold tracking-[3px] uppercase text-[#E0DDD6]">
-            FamVoiture
+            CarMileAge
           </h1>
           <p className="text-[11px] text-[#3A3A4A] mt-1 tracking-wider"
              style={{ fontFamily: "'JetBrains Mono', monospace" }}>
